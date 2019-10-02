@@ -27,7 +27,7 @@ public class Application extends Frame implements WindowListener {
 		this.add(view);
 		
 		this.pack();
-		this.setTitle("The clic game enhanced");
+		this.setTitle("The clic game enhanced over");
 		this.setVisible(true);	
 	}
 

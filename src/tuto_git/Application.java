@@ -21,7 +21,7 @@ public class Application extends Frame implements WindowListener {
 		View view = new View();
 		
 		modl.addObserver(view);
-		
+		this.addWindowListener(this);
 		view.addActionListener(ctrl);
 		
 		this.add(view);
@@ -38,7 +38,9 @@ public class Application extends Frame implements WindowListener {
 	public void windowClosed(WindowEvent e) {}
 
 	@Override
-	public void windowClosing(WindowEvent e) {}
+	public void windowClosing(WindowEvent e) {
+            System.exit(0);
+        }
 
 	@Override
 	public void windowDeactivated(WindowEvent e) {}
